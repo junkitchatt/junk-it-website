@@ -1,0 +1,117 @@
+<!-- TESTIMONIALS SECTION - Add this as a Custom HTML Widget -->
+
+<!-- Testimonials HTML -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">What Our Chattanooga Customers Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">Junk It provided excellent service for our estate cleanout in Hixson. They were professional, compassionate, and eco-friendly with their disposal methods.</p>
+                <div class="testimonial-author">Sarah M.</div>
+                <div class="testimonial-location">Hixson, TN</div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">Same-day furniture removal in Ooltewah! The team was punctual, careful with our property, and the pricing was very fair. Highly recommend!</p>
+                <div class="testimonial-author">Mike R.</div>
+                <div class="testimonial-location">Ooltewah, TN</div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">Used Junk It for our office cleanout in downtown Chattanooga. They handled everything professionally and even donated usable items to local charities.</p>
+                <div class="testimonial-author">Jennifer L.</div>
+                <div class="testimonial-location">Chattanooga, TN</div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">Construction debris removal in Cleveland was handled perfectly. They arrived on time, cleaned up completely, and disposed of everything responsibly.</p>
+                <div class="testimonial-author">Tom B.</div>
+                <div class="testimonial-location">Cleveland, TN</div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">Appliance removal service was top-notch. They recycled our old refrigerator and washing machine properly. Great eco-friendly approach!</p>
+                <div class="testimonial-author">Lisa K.</div>
+                <div class="testimonial-location">East Brainerd, TN</div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">Best junk removal company in Hamilton County! Fast, affordable, and they go above and beyond for customer satisfaction.</p>
+                <div class="testimonial-author">David W.</div>
+                <div class="testimonial-location">Signal Mountain, TN</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials CSS - Add this to Duda's Custom CSS -->
+<style>
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 4rem;
+    color: #f97316;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+    padding-top: 1rem;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-location {
+    color: #f97316;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Mobile Testimonials */
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+    
+    .testimonial-card::before {
+        font-size: 3rem;
+        top: -5px;
+        left: 15px;
+    }
+}
+</style>
