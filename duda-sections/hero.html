@@ -1,0 +1,159 @@
+<!-- HERO SECTION - Add this to Duda's Top Content Area -->
+
+<!-- Hero HTML -->
+<section class="hero">
+    <div class="hero-content floating">
+        <h1>Professional Junk Removal Chattanooga TN</h1>
+        <p class="hero-subtitle">Same-Day Service • Eco-Friendly Disposal • Serving Hixson, Ooltewah, Cleveland & Hamilton County</p>
+        <div class="hero-cta">
+            <a href="tel:4238887594" class="cta-button">Get Free Quote</a>
+            <a href="#services" class="cta-button secondary-button">Our Services</a>
+        </div>
+        <div class="trust-bar">
+            <div class="trust-items">
+                <div class="trust-item">
+                    ⭐ 4.9/5 Rating
+                </div>
+                <div class="trust-item">
+                    🚛 Same-Day Service
+                </div>
+                <div class="trust-item">
+                    ♻️ Eco-Friendly
+                </div>
+                <div class="trust-item">
+                    🛡️ Licensed & Insured
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hero CSS - Add this to Duda's Custom CSS -->
+<style>
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.9)), url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjYSkiLz48L3N2Zz4=');
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px; /* Account for fixed header */
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 2rem;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ecf0f1;
+    font-weight: 300;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.hero-cta .cta-button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+}
+
+.hero-cta .secondary-button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.hero-cta .secondary-button:hover {
+    background: white;
+    color: #1e3a8a;
+}
+
+/* Trust Indicators */
+.trust-bar {
+    background: rgba(255,255,255,0.1);
+    padding: 1rem 0;
+    border-radius: 10px;
+}
+
+.trust-items {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Floating Animation */
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Hero */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trust-items {
+        gap: 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .trust-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
