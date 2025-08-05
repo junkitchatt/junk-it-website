@@ -1,0 +1,134 @@
+<!-- SEO METADATA & SCHEMA - Add these to Duda's Site Settings -->
+
+<!-- 1. PAGE TITLE (Add to Duda's Page Settings > SEO) -->
+Junk Removal Chattanooga TN | Junk It - Professional Junk Hauling Services
+
+<!-- 2. META DESCRIPTION (Add to Duda's Page Settings > SEO) -->
+Professional junk removal Chattanooga TN. Same-day service in Hixson, Ooltewah, Cleveland. Furniture removal, appliance removal, construction debris. Call (423) 888-7594
+
+<!-- 3. META KEYWORDS (Add to Duda's Page Settings > SEO) -->
+junk removal Chattanooga TN, Chattanooga junk removal, furniture removal, appliance removal, construction debris removal, estate cleanout, junk hauling Chattanooga
+
+<!-- 4. SCHEMA MARKUP (Add to Duda's Site Settings > Head HTML) -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Junk It",
+    "description": "Professional junk removal services in Chattanooga, TN and surrounding areas",
+    "url": "https://www.junkitchatt.com",
+    "telephone": "(423) 888-7594",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chattanooga",
+        "addressRegion": "TN",
+        "addressCountry": "US"
+    },
+    "areaServed": ["Chattanooga", "Hixson", "Ooltewah", "Cleveland", "East Brainerd", "Hamilton County"],
+    "serviceType": ["Junk Removal", "Furniture Removal", "Appliance Removal", "Construction Debris Removal", "Estate Cleanout"],
+    "priceRange": "$$",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
+    },
+    "sameAs": [
+        "https://www.facebook.com/junkitchatt",
+        "https://www.yelp.com/biz/junk-it-chattanooga"
+    ]
+}
+</script>
+
+<!-- FAQ Schema Markup -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How much does junk removal cost in Chattanooga?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Junk removal pricing in Chattanooga is based on volume. A single item starts around $75, while full truck loads range from $300-$600. We provide free, no-obligation estimates."
+            }
+        },
+        {
+            "@type": "Question", 
+            "name": "Do you offer same-day junk removal in Chattanooga?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! We offer same-day and next-day junk removal services throughout Chattanooga, Hixson, Ooltewah, and Cleveland. Call (423) 888-7594 to check availability."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What areas do you serve for junk removal?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We provide junk removal services throughout Chattanooga, Hixson, Ooltewah, Cleveland, East Brainerd, Hamilton County, and North Georgia."
+            }
+        }
+    ]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.junkitchatt.com"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Junk Removal Services",
+            "item": "https://www.junkitchatt.com#services"
+        }
+    ]
+}
+</script>
+
+<!-- 5. CANONICAL TAG (Add to Duda's Page Settings > Head HTML) -->
+<link rel="canonical" href="https://www.junkitchatt.com">
+
+<!-- 6. ADDITIONAL META TAGS (Add to Duda's Page Settings > Head HTML) -->
+<meta name="geo.region" content="US-TN">
+<meta name="geo.placename" content="Chattanooga">
+<meta name="ICBM" content="35.0456,-85.2672">
+<meta name="robots" content="index, follow">
+
+<!-- 7. GOOGLE ANALYTICS (Add to Duda's Site Settings > Analytics) -->
+<!-- Replace GA_MEASUREMENT_ID with your actual Google Analytics tracking ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+
+<!-- 8. ADDITIONAL TRACKING SCRIPTS (Add to Duda's Site Settings > Body HTML) -->
+<script>
+// Phone number click tracking
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        link.addEventListener('click', function() {
+            // Track phone calls in analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'phone_call', {
+                    'event_category': 'contact',
+                    'event_label': 'phone_click',
+                    'value': 1
+                });
+            }
+        });
+    });
+});
+</script>
