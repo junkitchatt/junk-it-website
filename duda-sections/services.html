@@ -1,0 +1,164 @@
+<!-- SERVICES SECTION - Add this as a Custom HTML Widget -->
+
+<!-- Services HTML -->
+<section class="services">
+    <div class="container">
+        <h2 class="section-title">Chattanooga Junk Removal Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🛋️</div>
+                <h3>Furniture Removal Chattanooga</h3>
+                <p>Professional furniture removal and disposal. We handle couches, beds, tables, dressers, and all household furniture. Eco-friendly disposal with donation options.</p>
+                <a href="#furniture-removal" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Appliance Removal Chattanooga</h3>
+                <p>Safe appliance removal including refrigerators, washers, dryers, and electronics. We ensure proper recycling and environmentally responsible disposal.</p>
+                <a href="#appliance-removal" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏗️</div>
+                <h3>Construction Debris Removal</h3>
+                <p>Construction debris removal for contractors and homeowners. Drywall, lumber, concrete, roofing materials, and renovation waste removal.</p>
+                <a href="#construction-debris" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Estate Cleanout Chattanooga</h3>
+                <p>Compassionate estate cleanout services. We handle full property cleanouts with respect and care during difficult times.</p>
+                <a href="#estate-cleanout" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Commercial Junk Removal</h3>
+                <p>Commercial junk removal for offices, retail spaces, and businesses. Office furniture, equipment, and commercial debris removal.</p>
+                <a href="#commercial-junk" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌱</div>
+                <h3>Eco-Friendly Junk Removal</h3>
+                <p>Environmentally responsible junk disposal. We prioritize donation, recycling, and sustainable disposal methods to minimize landfill waste.</p>
+                <a href="#eco-friendly" class="service-link">Learn More →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services CSS - Add this to Duda's Custom CSS -->
+<style>
+/* Services Section */
+.services {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1e3a8a;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(45deg, #f97316, #fb923c);
+    border-radius: 2px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(45deg, #f97316, #fb923c);
+    transition: left 0.3s ease;
+}
+
+.service-card:hover::before {
+    left: 0;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #f97316;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.service-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #f97316;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.service-link:hover {
+    color: #1e3a8a;
+}
+
+/* Mobile Services */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+}
+</style>
